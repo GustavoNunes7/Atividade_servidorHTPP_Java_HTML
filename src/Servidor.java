@@ -203,59 +203,93 @@ public class Servidor {
         });
         servidor.createContext("/filmes", troca ->{
             String html = """
-                    <!DOCTYPE html>
-                                                            <html lang="pt-br">
-                                                            <head>
-                                                                <meta charset="UTF-8">
-                                                                <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                                                                <title>ATIVIDADE</title>
+                   <!DOCTYPE html>
+                                        <html lang="pt-br">
+                                        <head>
+                                            <meta charset="UTF-8">
+                                            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                                            <title>ATIVIDADE</title>
                     
-                                                                <style>
-                                                                    body{
-                    
-                    
-                                                                        background: linear-gradient(135deg, #ff0707,  #000000);/* Fazer um gradiente*/
-                                                                        text-align: center;
-                                                                    }\s
-                    
-                                                                    h1{
-                                                                        color: rgb(225, 227, 232);
-                                                                    }
+                                            <style>
+                                                body{
                     
                     
-                                                                    p{
-                                                                        color: white;
-                                                                    }
+                                                    background: linear-gradient(135deg, #ff0707,  #000000);/* Fazer um gradiente*/
+                                                    text-align: center;
+                                                } 
                     
-                                                                    .mudar{
-                                                                        display: inline-block;
-                                                                        margin: 15px;
-                                                                        padding: 20px;
-                                                                        background-color: rgb(19, 19, 187);
-                                                                        color: white;
-                                                                         text-decoration: none;  /* //Ele tira a linha debaixo da palavra de Link */
-                                                                        border-radius: 100px;
-                                                                        box-shadow: 0 4px 10px rgb white; /*Sombra*/
-                                                                        }
+                                                h1{
+                                                    color: rgb(225, 227, 232);
+                                                }
                     
-                                                                </style>
                     
-                                                            </head>
-                                                            <body>
-                                                                <h1>Filmes favoritos do Gustavo 🎞️</h1>
-                                                                <p>A Forja - O poder da Transformação</p>
-                                                                <p>Homem-Aranha Sem volta pra Casa</p>
-                                                                <p>Vingadores Últimato</p>
-                                                                <p>Super Mario Bros - o filme </p>
-                                                                <p>Um Filme Minecraft</p>
-                                                                <p>Sonic o filme</p>
-                                                                <p>Arranha-Céu: Coragem Sem Limite</p>
+                                                p,strong{
+                                                    color: white;
+                                                }
                     
-                                                            <a href="/jogos" class="mudar">Ir para Jogos 🎮</a> <br>
-                                                            <a href="/musicas" class="mudar">Ir para Músicas 🎵</a> <br>
+                                                .mudar{
+                                                    display: inline-block;
+                                                    margin: 15px;
+                                                    padding: 20px;
+                                                    background-color: rgb(19, 19, 187);
+                                                    color: white;
+                                                     text-decoration: none;  /* //Ele tira a linha debaixo da palavra de Link */
+                                                    border-radius: 100px;
+                                                    box-shadow: 0 4px 10px rgb white; /*Sombra*/
+                                                    }
                     
-                                                            </body>
-                                                            </html>
+                                            </style>
+                    
+                                        </head>
+                                        <body>
+                                            <h1>Filmes favoritos do Gustavo 🎞️</h1>
+                                            <strong>A Forja - o poder da transformação</strong><br>
+                                            <a href="https://www.youtube.com/watch?v=ohQ1IZmce5w" target =_blank_><img src="https://ingresso-a.akamaihd.net/prd/img/movie/a-forja-o-poder-da-transformacao/af623e40-b2c6-459e-ab40-db71808757ea.webp" alt="A Forja - o poder da transformaçã" width="220" height="400" title = "A Forja - o poder da transformação">  </a><br>
+
+                                            <h2></h2>
+                                             <strong>Homem-Aranha Sem volta para Casa</strong><br>
+                                            <a href="https://www.youtube.com/watch?v=CyiiEJRZjSU" target =_blank_><img src="https://upload.wikimedia.org/wikipedia/pt/thumb/0/00/Spider-Man_No_Way_Home_poster.jpg/250px-Spider-Man_No_Way_Home_poster.jpg" alt="Homem-Aranha Sem volta para Casa" width="220" height="400" title = "Homem-Aranha Sem volta para Casa">  </a><br>
+
+                                            <h2></h2>
+                                            <strong>Vingadores Últimato</strong><br>
+                                            <a href="https://www.youtube.com/watch?v=spJoZReeIeQ&t=3s" target =_blank_><img src="https://upload.wikimedia.org/wikipedia/pt/thumb/9/9b/Avengers_Endgame.jpg/250px-Avengers_Endgame.jpg" alt="Vingadores Últimato" width="220" height="400" title = "Vingadores Últimato">  </a><br>
+
+                                            <h2></h2>
+                                            <strong>Super Mario Bros o filme</strong><br>
+                                            <a href="https://www.youtube.com/watch?v=Cb4WV4aXBpk" target =_blank_><img src="https://br.web.img2.acsta.net/pictures/23/04/03/19/45/2854005.jpg" alt="Super Mario Bros o filme" width="220" height="400" title = "Super Mario Bros o filme">  </a><br>
+
+                                            <h2></h2>
+                                            <strong>Um filme Minecraft</strong><br>
+                                            <a href="https://www.youtube.com/watch?v=3IVPHxs4NoM&t=4s" target =_blank_><img src="https://m.media-amazon.com/images/M/MV5BYzFjMzNjOTktNDBlNy00YWZhLWExYTctZDcxNDA4OWVhOTJjXkEyXkFqcGc@._V1_.jpg" alt="Um filme Minecraft" width="220" height="400" title = "Um filme Minecraft">  </a><br>
+                                           
+
+                                            <h2></h2>
+                                            <strong>Sonic 3 - o filme</strong><br>
+                                            <a href="https://www.youtube.com/watch?v=-bcjtApoUyU" target =_blank_><img src="https://m.media-amazon.com/images/S/pv-target-images/d3d170cab1ef757a9a437cb9aa70bb33a8897f31f327f02c2de4d5a50dd32ff4.jpg" alt="Sonic 3 - o filme" width="220" height="400" title = "Sonic 3 - o filme">  </a><br>
+                                           
+                                            <h2></h2>
+                                            <strong>Arranha-Céu: Coragem Sem Limite</strong><br>
+                                            <a href="https://www.youtube.com/watch?v=DUP-La3JCDo" target =_blank_><img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRpzGVj7TVqbOyQGaJhUwAFqEQtn0Mh_J1h88PJgXys7_oBp3pwPM9wMRPB1WquRg_yDJ6MfqLqNbkoTnwa_GxuPhg7bW02dq4b3dW0YJg" alt="Arranha-Céu: Coragem Sem Limite" width="220" height="400" title = "Arranha-Céu: Coragem Sem Limite">  </a><br>
+                                           
+
+
+
+
+
+
+
+
+
+
+                                         
+                                            
+                                         
+                    
+                                        <a href="/jogos" class="mudar">Ir para Jogos 🎮</a> <br>
+                                        <a href="/musicas" class="mudar">Ir para Músicas 🎵</a> <br>
+                    
+                                        </body>
+                                        </html>
                     """;
 
             enviarResposta(troca, html);
